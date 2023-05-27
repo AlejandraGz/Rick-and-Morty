@@ -17,19 +17,19 @@ const fillData = (jsonData) => {
   let i = 0;
   jsonData.results.forEach(e => {
     console.log(i++)
-    htmlCards += "<div class='col>";
-    htmlCards += "<div class='card my-3' style='max-width: 540px;'>";
+    htmlCards += "<div class='col col-5 mt-1'style='max-width: 700px; padding: 0px'> ";
+    htmlCards += "<div class='card my-3' style='max-width: 700px;'>";
     htmlCards += "<div class='row g-0'>";
     htmlCards += "<div class='col-md-4'>";
-    htmlCards += `<img src="${e.image}" class="img-fluid rounded-start" alt="...">`;
+    htmlCards += `<img src="${e.image}" class="img-fluid rounded-start" alt="..." style='height: 100%; padding: 0px''>`;
     htmlCards += '</div>'
     htmlCards += '<div class="col-md-8">'
-    htmlCards += '<div class="card-body" style="background-color: #505155; height: 194px">'
-    htmlCards += `<h5 class="card-title">${e.name}</h5>`
-    htmlCards += `<h5 class="card-text">${e.status} - ${e.species}</h5>`
-    htmlCards += `<h5 class="card-text">${e.gender}</h5>`
-    htmlCards += `<h6 class="card-text">Last known location:</h6>`
-    htmlCards += `<h5 class="card-text">${e.location.name}</h5>`
+    htmlCards += '<div class="card-body pe-2" style="background-color: #505155; height: 100%; border-top-right-radius:5px ; border-bottom-right-radius:5px ;">'
+    htmlCards += `<h5 class="card-title text-white fs-2 text fw-bold">${e.name}</h5>`
+    htmlCards += `<h5 class="card-text text-white fs-5 fw-bold">${e.status} - ${e.species}</h5>`
+    htmlCards += `<h5 class="card-text text-white fs-5 fw-light">${e.gender}</h5>`
+    htmlCards += `<h6 class="card-text text-white-50 fs-6">Last known location:</h6>`
+    htmlCards += `<h5 class="card-text text-white fs-5 fw-light">${e.location.name}</h5>`
     htmlCards += '</div></div></div></div></div>'
   });
   document.getElementById('cardsFromApi').innerHTML = htmlCards;

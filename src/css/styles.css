@@ -25,6 +25,19 @@ h1 {
   background-color: #272b33;
   height: 100%;
 }
+footer {
+  background-color: #202329;
+  height: 400px;
+  box-shadow: inset -21px 15px 42px -34px #2b2b2b;
+}
+footer p, a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #ff8a05;
+}
 .each-card {
   background-color: #505155;
 }
