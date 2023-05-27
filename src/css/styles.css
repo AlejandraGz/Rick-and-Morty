@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 95px;
+  font-weight: 900;
+}
+
+.navbar-brand,
+.btn-support {
+  font-weight: 700;
+  color: #333333;
+}
+
+.bg-cards div {
+  background-color: #272b33;
+  height: 100%;
+}
+.each-card {
+  background-color: #505155;
+}
+
+.icon {
+  width: 40px;
+}
+
+.btn-support {
+  border: 1px solid #ff8a05;
+  background: none;
+  padding: 5px 18px;
+  border-radius: 9px;
+}
+
+.btn-support:hover {
+  background: #ff8a05;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: #ff8a05;
+}
+
+.container {
+  position: relative;
+}
+
+.logo-bg {
+  position: absolute;
+  top: -45%;
+  z-index: -1;
+  opacity: 0.1;
+  height: 260px;
+}
