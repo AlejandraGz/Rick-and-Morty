@@ -32,11 +32,24 @@ footer {
 }
 footer p, a {
   text-decoration: none;
-  color: white;
+  color: #adaaaa;
+  font-weight: bold;
   margin: 0 10px;
+}
+p a {
+  color: white;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #ff8a05;
+  font-size: small;
+}
+p a:hover {
+  border: none;
 }
 footer a:hover {
   color: #ff8a05;
+}
+.github-icon {
+  color: black;
 }
 .each-card {
   background-color: #505155;
@@ -72,4 +85,7 @@ footer a:hover {
   z-index: -1;
   opacity: 0.1;
   height: 260px;
+}
+.d-none {
+  display: none;
 }

@@ -38,3 +38,15 @@ const fillData = (jsonData) => {
 function onInit(){
   getData(api);
 }
+
+function newImage() {
+  document.querySelector('#github').classList.add('d-none');
+  document.querySelector('#githubHovered').classList.remove('d-none');
+
+}
+function oldImage()
+{
+  document.querySelector('#github').classList.remove('d-none');
+  document.querySelector('#githubHovered').classList.add('d-none');
+
+}
