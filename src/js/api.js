@@ -21,7 +21,7 @@ const fillData = (jsonData) => {
     htmlCards += "<div class='card my-3' style='max-width: 700px;'>";
     htmlCards += "<div class='row g-0'>";
     htmlCards += "<div class='col-md-4'>";
-    htmlCards += `<img src="${e.image}" class="img-fluid rounded-start" alt="..." style='height: 100%; padding: 0px''>`;
+    htmlCards += `<img src="${e.image}" class="img-fluid rounded-start" alt="imagen de ${e.name}" style='height: 100%; padding: 0px''>`;
     htmlCards += '</div>'
     htmlCards += '<div class="col-md-8">'
     htmlCards += '<div class="card-body pe-2" style="background-color: #505155; height: 100%; border-top-right-radius:5px ; border-bottom-right-radius:5px ;">'
